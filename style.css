@@ -2,6 +2,14 @@
   font-family: Pilat Extended;
   src: url("fonts/PilatExtendedRegular.otf") format("otf");
   src: url("fonts/PilatExtendedRegular.woff") format("woff");
+  src: url("fonts/PilatExtendedRegular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Gatwick;
+  src: url("fonts/Gatwick-Medium.otf") format("otf");
+  src: url("fonts/Gatwick-Medium.woff") format("woff");
+  src: url("fonts/Gatwick-Medium.woff2") format("woff2");
 }
 
 html,
