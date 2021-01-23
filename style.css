@@ -80,7 +80,6 @@ header {
 .text {
   padding-left: 100px;
   font-family: Gatwick;
-  font-style: normal;
   font-weight: 300;
   font-size: 96px;
   line-height: 110px;
@@ -125,7 +124,6 @@ header {
   .text {
     padding-left: 50px;
     font-family: Gatwick;
-    font-style: normal;
     font-weight: 300;
     font-size: calc(72px);
     line-height: 80px;
@@ -148,7 +146,6 @@ header {
   .text {
     padding-left: 50px;
     font-family: Gatwick;
-    font-style: normal;
     font-weight: 300;
     font-size: calc(48px);
     line-height: 56px;
@@ -181,7 +178,6 @@ header {
   .text {
     padding-left: 25px;
     font-family: Gatwick;
-    font-style: normal;
     font-weight: 300;
     font-size: 40px;
     line-height: 42px;
