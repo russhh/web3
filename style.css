@@ -7,9 +7,9 @@
 
 @font-face {
   font-family: Gatwick;
-  src: url("fonts/Gatwick-Medium.otf") format("otf");
-  src: url("fonts/Gatwick-Medium.woff") format("woff");
-  src: url("fonts/Gatwick-Medium.woff2") format("woff2");
+  src: url("fonts/Gatwick-Light.otf") format("otf");
+  src: url("fonts/Gatwick-Light.woff") format("woff");
+  src: url("fonts/Gatwick-Light.woff2") format("woff2");
 }
 
 html,
