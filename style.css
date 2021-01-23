@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  background: url("img/bg.png") no-repeat center center fixed;
+  background: url("img/bg-min.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -93,7 +93,7 @@ header {
 
 @media screen and (max-width: 1100px) {
   .container {
-    background: url("img/1000.png") no-repeat center right fixed;
+    background: url("img/1000-min.png") no-repeat center right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -154,7 +154,7 @@ header {
 
 @media screen and (max-width: 500px) {
   .container {
-    background: url("img/500.png") no-repeat center right fixed;
+    background: url("img/500-min.png") no-repeat center right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
