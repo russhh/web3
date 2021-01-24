@@ -157,7 +157,7 @@ header {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 537px) {
   .container {
     background: url("img/500-min.png") no-repeat center right fixed;
     -webkit-background-size: cover;
