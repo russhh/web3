@@ -86,10 +86,6 @@ header {
   opacity: 1;
 }
 
-.video2 video {
-  visibility: hidden;
-}
-
 .hero {
   display: flex;
   height: 70%;
@@ -228,8 +224,8 @@ header {
     font-size: 24px;
     line-height: 35px;
   }
-  .video2 video {
-    position: absolute;
+  .video video {
+    position: relative;
     top: 0;
     right: 0;
     width: 100%;
@@ -237,10 +233,7 @@ header {
     object-fit: cover;
     z-index: -1;
     opacity: 1;
-    visibility: visible;
-  }
-  .video video {
-    visibility: hidden;
+    padding-right: 500px;
   }
 }
 
