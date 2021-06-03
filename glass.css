@@ -1,11 +1,16 @@
 @font-face {
-  font-family: Helvetica;
-  src: url("fonts/HelveticaNeueLTStd-Md.otf") format("otf");
-  src: url("fonts/HelveticaNeueLTStd-Md.woff") format("woff");
-  src: url("fonts/HelveticaNeueLTStd-Md.woff2") format("woff2");
+  font-family: Pilat Extended;
+  src: url("fonts/PilatExtendedRegular.otf") format("otf");
+  src: url("fonts/PilatExtendedRegular.woff") format("woff");
+  src: url("fonts/PilatExtendedRegular.woff2") format("woff2");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@font-face {
+  font-family: Gatwick;
+  src: url("fonts/Gatwick-Light.otf") format("otf");
+  src: url("fonts/Gatwick-Light.woff") format("woff");
+  src: url("fonts/Gatwick-Light.woff2") format("woff2");
+}
 
 html,
 body {
@@ -36,48 +41,207 @@ body {
 }
 
 .container {
-  width: 512px;
+  background: url("img/video.mp4") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
+  justify-content: center;
   height: 100%;
-  margin: 0 auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  z-index: 1;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 100px;
+  z-index: 10;
 }
 
 .logo {
   width: 100px;
   height: auto;
+  filter: invert(1);
 }
 
-.linkdiv {
+.item_name {
+  font-family: Pilat Extended;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+  text-align: right;
+  display: none;
+}
+
+.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1;
+}
+
+.video2 video {
+  visibility: hidden;
+}
+
+.hero {
   display: flex;
+  height: 70%;
+  align-items: center;
 }
 
 .text {
-  margin: 0 auto;
-  width: 100vw;
-  font-size: 36px;
-  font-family: "helvetica";
-  text-align: center;
+  padding-left: 100px;
+  font-family: Gatwick;
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 110px;
+  /* or 115% */
+
+  letter-spacing: -0.08em;
+
+  color: white;
 }
 
-.info {
-  font-size: 18px;
-  font-family: "helvetica";
-  text-align: left;
-  padding-bottom: 50px;
+.bottom {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  padding-left: 100px;
+  font-family: Pilat Extended;
+  color: white;
 }
 
-.moretext {
-  font-size: 18px;
-  font-family: "Roboto Mono", monospace;
-  color: grey;
+@media screen and (max-width: 1100px) {
+  .container {
+    background: url("") no-repeat center right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+  }
 }
+
+@media screen and (max-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 50px;
+  }
+  .item_name {
+    display: none;
+  }
+
+  .text {
+    padding-left: 50px;
+    font-family: Gatwick;
+    font-weight: 300;
+    font-size: calc(72px);
+    line-height: 80px;
+    /* or 115% */
+
+    letter-spacing: -0.08em;
+
+    color: white;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 50px;
+    display: block;
+    padding-left: 50px;
+    font-family: Pilat Extended;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .text {
+    padding-left: 50px;
+    font-family: Gatwick;
+    font-weight: 300;
+    font-size: calc(48px);
+    line-height: 56px;
+    /* or 115% */
+
+    letter-spacing: -0.08em;
+
+    color: white;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .container {
+    background: url("") no-repeat center right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    height: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 25px;
+  }
+
+  .text {
+    padding-left: 25px;
+    font-family: Gatwick;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    /* or 115% */
+
+    letter-spacing: -0.08em;
+
+    color: white;
+  }
+  .bottom {
+    position: absolute;
+    bottom: 25px;
+    display: block;
+    padding-left: 25px;
+    font-family: Pilat Extended;
+    width: 100%;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .video2 video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    visibility: visible;
+  }
+  .video video {
+    visibility: hidden;
+  }
+}
+
+/**s**/
